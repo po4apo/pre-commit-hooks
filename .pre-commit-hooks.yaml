@@ -14,6 +14,6 @@
 
 - id: check-allure-id
   name: Check Allure Id and Owner
-  entry: "tools/check_allure_id.py"
+  entry: python tools/check_allure_id.py
   language: system
   files: ^(.*/)?test_.*\.py$

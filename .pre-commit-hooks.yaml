@@ -12,8 +12,8 @@
   args: ["format"]
   types: ["python"]
 
-- id: check-allure_id
+- id: check-allure-id
   name: Check Allure Id and Owner
   entry: "tools/check_allure_id.py"
   language: system
-  files: "^(.*/)?test_.*\.py$"
+  files: ^(.*/)?test_.*\.py$

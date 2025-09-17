@@ -1,0 +1,19 @@
+- id: ruff-base
+  name: Ruff
+  entry: ruff
+  language: system
+  args: ["check", "--config", "ruff_base.toml", "--fix"]
+  types: ["python"]
+
+- id: ruff-format
+  name: Ruff(format)
+  entry: ruff
+  language: system
+  args: ["format"]
+  types: ["python"]
+
+- id: check-allure_id
+  name: Check Allure Id and Owner
+  entry: "tools/check_allure_id.py"
+  language: system
+  files: "^(.*/)?test_.*\.py$"
